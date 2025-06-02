@@ -1,13 +1,10 @@
-import sys
-
 import numpy as np
-import pytest
 import torch
 
 from napari_roxas_ai._segmentation._cells_model import CellsSegmentationModel
 
 
-@pytest.mark.skipif(sys.platform == "darwin", reason="Skip on macOS")
+# @pytest.mark.skipif(sys.platform == "darwin", reason="Skip on macOS")
 def test_cells_segmentation_model():
 
     # Initialize model
