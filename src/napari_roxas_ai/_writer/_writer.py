@@ -106,7 +106,7 @@ def save_image(path: str, image: np.ndarray, rescale: bool = False) -> str:
     pil_image = Image.fromarray(image)
 
     # Save the image to the specified path
-    pil_image.save(path)
+    pil_image.save(path, compression="tiff_deflate")
 
     return path
 
